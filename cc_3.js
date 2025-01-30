@@ -12,3 +12,21 @@ quantities [2] += 5; //adding 5 to the third value
 let total_quantities = quantities.reduce((sum, total)=> sum + total,0);
 
 console.log("Total order count:", total_quantities); 
+
+//"Task 3 - Employee Performance Tracking."
+
+let employee = {
+    name: "Jantrell Porter",
+    role: "Data analyst",
+    performancescore: 4,
+    isActive: true
+};
+
+// adding a new property
+employee.promotioneligible = true
+
+// updated employee information 
+
+let updated_employee = employee
+
+console.log("Updated employee infpormation:", updated_employee)
