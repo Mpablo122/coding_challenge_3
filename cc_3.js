@@ -28,5 +28,14 @@ employee.promotioneligible = true
 // updated employee information 
 
 let updated_employee = employee
+console.log("Updated employee information:", updated_employee)
 
-console.log("Updated employee infpormation:", updated_employee)
+//  "Task 4 - Customer Feedback Records."
+
+let feedback = [{customerName: "Nick Lapasta", feedbackText:"Polite service", rating: 7},
+                {customerName: "Benny beer", feedbackText: "Very rude and impolite", rating: 2},
+                {customerName: "Gelo Ball", feedbackText:"Funny and lighthearted", rating: 8.5}
+];
+
+feedback.push({customerName: "Frank Ocean", feedbackText: "Has good music taste",rating: 8});
+console.log(feedback);
