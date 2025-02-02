@@ -38,6 +38,7 @@ let feedback = [
     {customer: "Gelo Ball", feedbackText:"Funny and lighthearted", rating: 8.5
     }];
 
+// adding another cuustomer feedback and final output for task 4 
 feedback.push({customer: "Frank Ocean", feedbackText: "Has good music taste", rating: 8});
 console.log("Customer feedback", feedback);
 
