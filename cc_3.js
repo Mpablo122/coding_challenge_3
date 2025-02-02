@@ -22,9 +22,9 @@ let employee = {
     isActive: true
 };
 
-// adding a new property
+// adding a new property and updating performancescore
+employee.performancescore = 5;
 employee.promotioneligible = true
-
 // updated employee information 
 
 let updated_employee = employee
@@ -32,10 +32,23 @@ console.log("Updated employee information:", updated_employee)
 
 //  "Task 4 - Customer Feedback Records."
 
-let feedback = [{customerName: "Nick Lapasta", feedbackText:"Polite service", rating: 7},
-                {customerName: "Benny beer", feedbackText: "Very rude and impolite", rating: 2},
-                {customerName: "Gelo Ball", feedbackText:"Funny and lighthearted", rating: 8.5}
-];
+let feedback = [
+    {customer: "Nick Lapasta", feedbackText:"Polite service", rating: 7},
+    {customer: "Benny beer", feedbackText: "Very rude and impolite", rating: 2},
+    {customer: "Gelo Ball", feedbackText:"Funny and lighthearted", rating: 8.5
+    }];
 
-feedback.push({customerName: "Frank Ocean", feedbackText: "Has good music taste",rating: 8});
-console.log(feedback);
+feedback.push({customer: "Frank Ocean", feedbackText: "Has good music taste", rating: 8});
+console.log("Customer feedback", feedback);
+
+//Task 5 Inventory Management
+let inventory = {
+    itemName: "Hp Omen",
+    stockCount: 50,
+    price: 1000,
+    calculateTotalValue: function() {
+        return this.stockCount * this.price;
+    }
+};
+console.log("Details of stored inventory:", inventory);
+console.log("Total Value of stored inventory:", inventory.calculateTotalValue());
